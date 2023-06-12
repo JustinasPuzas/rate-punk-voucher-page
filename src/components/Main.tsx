@@ -11,7 +11,7 @@ export default function Main() {
     e.preventDefault();
     const email = e.target.email.value;
     try {
-      const response = await axios.post("/api/getVoucher", { email });
+      await axios.post("/api/getVoucher", { email });
       setError("");
       setSuccess(true);
     } catch (err: any) {
