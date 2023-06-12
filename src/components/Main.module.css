@@ -1,0 +1,311 @@
+.main {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #f8cc5d;
+  gap: 128px;
+  padding: 64px max(16px, (100vw - 1120px) / 2);
+}
+@media screen and (max-width: 1105px) {
+  .main {
+    align-items: center;
+    flex-direction: column;
+    gap: 64px;
+    padding: 32px max(16px, (100vw - 1120px) / 2);
+  }
+}
+
+.inviteSection {
+  font-size: 20px;
+  border: 1px solid #1f343e;
+  border-radius: 16px;
+  background-color: white;
+  min-width: 544px;
+  min-height: 712px;
+  padding: 64px;
+  max-width: 480px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+@media screen and (max-width: 600px) {
+  .inviteSection {
+    font-size: 16px;
+  }
+}
+.inviteSection h1 {
+  font-family: Caveat Brush;
+  font-weight: 400;
+  font-size: 48px;
+  letter-spacing: 0px;
+  color: #1f343e;
+  text-transform: uppercase;
+  margin-top: 0;
+}
+.inviteSection small {
+  font-size: 16px;
+  justify-self: flex-end;
+  color: #6d7a80;
+}
+@media screen and (max-width: 600px) {
+  .inviteSection {
+    min-width: 343px;
+    min-height: 539px;
+    padding: 32px 16px;
+  }
+  .inviteSection h1 {
+    font-size: 32px;
+  }
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 64px;
+}
+@media screen and (max-width: 600px) {
+  .form {
+    margin-top: 24px;
+  }
+}
+.form .error {
+  font-size: 12px;
+  letter-spacing: 0px;
+  color: #ed6f82;
+}
+.form .success {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  letter-spacing: 0px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+.form .success img {
+  width: 32px;
+  height: 32px;
+  margin-right: 16px;
+}
+@media screen and (max-width: 600px) {
+  .form .success img {
+    width: 24px;
+  }
+}
+.form .inputWrapper {
+  font-size: 20px;
+  height: 64px;
+  margin-top: 7px;
+  margin-bottom: 16px;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border: 1px solid #1f343e;
+  border-radius: 8px;
+  position: relative;
+}
+@media screen and (max-width: 600px) {
+  .form .inputWrapper {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .form .inputWrapper {
+    height: 56px;
+  }
+}
+.form .inputWrapper input {
+  font-size: 20px;
+  width: 100%;
+  height: 100%;
+  border: none;
+  background: transparent;
+  padding-left: 20px;
+  font-weight: 400;
+  letter-spacing: 0px;
+  color: #1f343e;
+}
+@media screen and (max-width: 600px) {
+  .form .inputWrapper input {
+    font-size: 16px;
+  }
+}
+.form .inputWrapper input {
+  padding-left: 60px;
+}
+.form .inputWrapper img {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+}
+.form .referralWrapper {
+  font-size: 20px;
+  height: 64px;
+  margin-top: 7px;
+  margin-bottom: 16px;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border: 1px solid #1f343e;
+  border-radius: 8px;
+  display: flex;
+}
+@media screen and (max-width: 600px) {
+  .form .referralWrapper {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .form .referralWrapper {
+    height: 56px;
+  }
+}
+.form .referralWrapper input {
+  font-size: 20px;
+  width: 100%;
+  height: 100%;
+  border: none;
+  background: transparent;
+  padding-left: 20px;
+  font-weight: 400;
+  letter-spacing: 0px;
+  color: #1f343e;
+}
+@media screen and (max-width: 600px) {
+  .form .referralWrapper input {
+    font-size: 16px;
+  }
+}
+.form .referralWrapper input {
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+.form .referralWrapper button {
+  font-size: 20px;
+  height: 64px;
+  border-radius: 8px;
+  letter-spacing: 0px;
+  color: #ffffff;
+  background: #4eb3e3 0% 0% no-repeat padding-box;
+  border: 1px solid #1f343e;
+  width: 96px;
+  border: 0px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+@media screen and (max-width: 600px) {
+  .form .referralWrapper button {
+    font-size: 16px;
+  }
+}
+.form .referralWrapper button:hover {
+  background: #7ac6ea;
+  color: #ffffff;
+}
+@media screen and (max-width: 600px) {
+  .form .referralWrapper button {
+    height: 56px;
+  }
+}
+.form .submit {
+  font-size: 20px;
+  height: 64px;
+  border-radius: 8px;
+  letter-spacing: 0px;
+  color: #ffffff;
+  background: #4eb3e3 0% 0% no-repeat padding-box;
+  border: 1px solid #1f343e;
+  border-radius: 8px;
+  letter-spacing: 0px;
+  color: #ffffff;
+  font-size: 20px;
+  background: #4eb3e3 0% 0% no-repeat padding-box;
+  border: 1px solid #1f343e;
+}
+@media screen and (max-width: 600px) {
+  .form .submit {
+    font-size: 16px;
+  }
+}
+.form .submit:hover {
+  background: #7ac6ea;
+  color: #ffffff;
+}
+@media screen and (max-width: 600px) {
+  .form .submit {
+    height: 56px;
+  }
+}
+
+.stepsSection .stepsContainer {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 48px;
+}
+@media screen and (max-width: 600px) {
+  .stepsSection .stepsContainer {
+    gap: 48px;
+  }
+}
+.stepsSection article {
+  display: flex;
+  flex-direction: row;
+  gap: 56px;
+  max-width: 449px;
+}
+.stepsSection article div h2 {
+  font-family: Caveat Brush;
+  font-size: 32px;
+  letter-spacing: 0px;
+  color: #1f343e;
+  text-transform: uppercase;
+  font-weight: 400;
+  margin: 8px 0;
+}
+.stepsSection article div h3 {
+  font-size: 20px;
+  letter-spacing: 1.6px;
+  color: #4eb3e3;
+  text-transform: uppercase;
+  margin: 8px 0;
+}
+@media screen and (max-width: 600px) {
+  .stepsSection article div h3 {
+    font-size: 16px;
+  }
+}
+.stepsSection article div p {
+  font-size: 20px;
+}
+@media screen and (max-width: 600px) {
+  .stepsSection article div p {
+    font-size: 16px;
+  }
+}
+.stepsSection article:nth-child(2) {
+  flex-direction: row-reverse;
+}
+@media screen and (max-width: 600px) {
+  .stepsSection article {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0px;
+    width: 100%;
+  }
+  .stepsSection article:nth-child(2) {
+    flex-direction: column;
+  }
+  .stepsSection article div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .stepsSection article div h3 {
+    font-size: 16px;
+  }
+}
+.stepsSection img {
+  width: 128px;
+}/*# sourceMappingURL=Main.module.css.map */

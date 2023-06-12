@@ -1,0 +1,78 @@
+.footer {
+  display: flex;
+  gap: 110px;
+  padding: 64px max(16px, (100vw - 1120px) / 2);
+}
+@media screen and (max-width: 1105px) {
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    gap: 48px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .footer {
+    align-items: flex-start;
+    padding: 48px 32px;
+  }
+}
+.footer h3 {
+  text-transform: uppercase;
+  font-size: 20px;
+  letter-spacing: 1.6px;
+  margin-top: 1px;
+  margin-bottom: 24px;
+}
+
+.about {
+  max-width: 544px;
+}
+
+.links {
+  display: flex;
+  gap: 110px;
+}
+@media screen and (max-width: 600px) {
+  .links {
+    flex-direction: column;
+    gap: 32px;
+  }
+}
+.links ul {
+  list-style: none;
+  padding: 0;
+}
+.links ul li {
+  margin: 8px 0;
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.contactList li {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.socialsList {
+  display: flex;
+  gap: 8px;
+}
+.socialsList a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #4eb3e3 0% 0% no-repeat padding-box;
+  border: 1px solid #1f343e;
+  border-radius: 8px;
+  padding: 8px;
+}
+.socialsList a img {
+  width: 16px;
+  height: 16px;
+}/*# sourceMappingURL=Footer.module.css.map */
