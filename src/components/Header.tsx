@@ -55,21 +55,21 @@ export default function Header() {
   );
 }
 
-function NavLink({ children, href }: any) {
+function NavLink(props:{ children: JSX.Element | string, href:string }) {
   const router = useRouter();
 
   const style = {
-    color: router.pathname === href ? "#4EB3E3" : "black",
+    color: router.pathname === props.href ? "#4EB3E3" : "black",
   };
 
   const handleClick = (e: any) => {
     e.preventDefault();
-    router.push(href);
+    router.push(props.href);
   };
 
   return (
-    <a href={href} onClick={handleClick} style={style}>
-      {children}
+    <a href={props.href} onClick={handleClick} style={style}>
+      {props.children}
     </a>
   );
 }
