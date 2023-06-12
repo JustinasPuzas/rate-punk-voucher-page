@@ -16,9 +16,6 @@
   }
 }
 
-@mixin AdaptiveMargin {
-}
-
 @mixin AdaptiveFont {
   font-size: 20px;
 
@@ -203,10 +200,6 @@
     justify-content: center;
     align-items: flex-start;
     gap: 48px;
-
-    // @media screen and (max-width: 600px) {
-    //   gap: 48px;
-    // }
   }
 
   article {
